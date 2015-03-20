@@ -42,7 +42,8 @@ define( 'MSC_PATH',    dirname( __FILE__ ) . '/' );
 define( 'MSC_INC',     MSC_PATH . 'includes/' );
 
 // Include files
-require_once MSC_INC . 'functions/core.php';
+require_once MSC_INC . 'core.php';
+require_once MSC_INC . 'admin.php';
 
 
 // Activation/Deactivation
@@ -51,3 +52,4 @@ register_deactivation_hook( __FILE__, '\CG\Multisite_Clone\Core\deactivate' );
 
 // Bootstrap
 CG\Multisite_Clone\Core\setup();
+CG\Multisite_Clone\Admin\init();
