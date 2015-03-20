@@ -1,0 +1,27 @@
+{
+	"name": "multisite-clone",
+	"description": "Simple WordPress Multisite Site clone tool",
+	"version": "0.0.1",
+	"type": "wordpress-plugin",
+	"keywords": [],
+	"homepage": "http://wordpress.org/plugins",
+	"license": "GPLv2.0+",
+	"authors": [
+		{
+			"name": "Cole Geissinger",
+			"email": "colegeissinger@gmail.com",
+		"homepage": "http://www.colegeissinger.com",
+			"role": "Developer"
+		}
+	],
+    "minimum-stability": "dev",
+	"require": {
+		"php": ">=5.4"
+	},
+    "require-dev": {
+	    "antecedent/patchwork": "1.2.*",
+        "phpunit/phpunit"     : "*@stable",
+	    "brianium/paratest"   : "dev-master",
+        "10up/wp_mock"        : "dev-master"
+    }
+}
