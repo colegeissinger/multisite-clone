@@ -177,6 +177,7 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask( 'js', ['jshint', 'concat', 'uglify'] );
 	grunt.registerTask( 'css', ['sass', 'autoprefixer', 'cssmin'] );
+	grunt.registerTask( 'readme', ['wp_readme_to_markdown'] );
 
 	grunt.registerTask( 'build', ['default', 'clean', 'copy', 'compress'] );
 
